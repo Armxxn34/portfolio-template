@@ -1,7 +1,9 @@
-const express = require('express')
-const app = express()
+const express = require('express');
 
-// respond with "hello world" when a GET request is made to the homepage
-app.get('/index.html', (req, res) => {
-  res.send('hello world')
-})
+const app = express();
+const port = process.env.PORT || 8080;
+
+// sendFile will go here
+
+app.listen(port);
+console.log('Server started at http://localhost:' + port);
